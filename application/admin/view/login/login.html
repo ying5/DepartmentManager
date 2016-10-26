@@ -1,0 +1,98 @@
+{__NOLAYOUT__}
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>用户登录 - {$Think.config.site.systemname}</title>
+	<!--[if lt IE 9]>
+		<script src="http://libs.cdnjs.net/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.min.js"></script>
+		<script src="http://libs.cdnjs.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		{load href="/static/home/Javascript/Flot/excanvas.js" /}
+	<![endif]-->
+	<!-- The Fonts -->
+	<!--<link href="http://fonts.gmirror.org/css?family=Oswald|Droid+Sans:400,700" rel="stylesheet" />-->
+	<!-- The Main CSS File -->
+        {load href="/static/admin/login/CSS/style.css" /}
+	<!-- jQuery -->
+      {load href="/static/admin/login/Javascript/jQuery/jquery-1.7.2.min.js" /}
+	<!-- Flot -->
+	{load href="/static/admin/login/Javascript/Flot/jquery.flot.js" /}
+	{load href="/static/admin/login/Javascript/Flot/jquery.flot.resize.js" /}
+	{load href="/static/admin/login/Javascript/Flot/jquery.flot.pie.js" /}
+	<!-- DataTables -->
+	{load href="/static/admin/login/Javascript/DataTables/jquery.dataTables.min.js" /}
+	<!-- ColResizable -->
+	{load href="/static/admin/login/Javascript/ColResizable/colResizable-1.3.js" /}
+	<!-- jQuryUI -->
+	{load href="/static/admin/login/Javascript/jQueryUI/jquery-ui-1.8.21.min.js" /}
+	<!-- Uniform -->
+	{load href="/static/admin/login/Javascript/Uniform/jquery.uniform.js" /}
+	<!-- Tipsy -->
+	{load href="/static/admin/login/Javascript/Tipsy/jquery.tipsy.js" /}
+	<!-- Elastic -->
+	{load href="/static/admin/login/Javascript/Elastic/jquery.elastic.js" /}
+	<!-- ColorPicker -->
+	{load href="/static/admin/login/Javascript/ColorPicker/colorpicker.js" /}
+	<!-- SuperTextarea -->
+	{load href="/static/admin/login/Javascript/SuperTextarea/jquery.supertextarea.min.js" /}
+	<!-- UISpinner -->
+	{load href="/static/admin/login/Javascript/UISpinner/ui.spinner.js" /}
+	<!-- MaskedInput -->
+	{load href="/static/admin/login/Javascript/MaskedInput/jquery.maskedinput-1.3.js" /}
+	<!-- ClEditor -->
+	{load href="/static/admin/login/Javascript/ClEditor/jquery.cleditor.js" /}
+	<!-- Full Calendar -->
+	{load href="/static/admin/login/Javascript/FullCalendar/fullcalendar.js" /}
+	<!-- Color Box -->
+	{load href="/static/admin/login/Javascript/ColorBox/jquery.colorbox.js" /}
+	<!-- Kanrisha Script -->
+	{load href="/static/admin/login/Javascript/kanrisha.js" /}
+</head>
+<body>
+
+	<!-- Top Panel -->
+	<div class="top_panel">
+		<div class="wrapper">
+			<div class="user">
+				<img src="/static/admin/login/Images/user_avatar.png" alt="user_avatar" class="user_avatar">
+				<span class="label"><a href="#">Sign Up</a></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper contents_wrapper">
+		
+		<div class="login">
+			<div class="widget_header">
+				<h4 class="widget_header_title wwIcon i_16_login">Login</h4>
+			</div>
+			<div class="widget_contents lgNoPadding">
+				<form action="{:url('admin/login/logincheck')}" method="post">
+				<div class="line_grid">
+					<div class="g_2 g_2M"><span class="label">User</span></div>
+					<div class="g_10 g_10M">
+						<input name="username" class="simple_field tooltip" title="请输入您的邮箱" type="text" placeholder="123456@qq.com"></div>
+					<div class="clear"></div>
+				</div>
+				<div class="line_grid">
+					<div class="g_2 g_2M"><span class="label">Pass</span></div>
+					<div class="g_10 g_10M">
+						<input name="password" class="simple_field tooltip" title="请输入您的密码" type="password" value="">
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="line_grid">
+					<div class="g_6"><input class="submitIt simple_buttons" value="Log In" type="submit">
+					</div>
+					<div class="g_6"><input class="submitIt simple_buttons" value="Sign In" type="button">
+					</div>
+					<div class="clear"></div>
+				</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

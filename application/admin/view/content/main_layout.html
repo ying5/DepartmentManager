@@ -1,0 +1,22 @@
+{extend name="layout" /}
+{block name="content"}
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		服务器基本信息:
+		<i class="icon-spinner icon-spin"></i>正在运行
+	</div>
+	<div class="panel-body">
+		 {volist name="server" id="vo" key="k"}
+            <div>
+            	<span>{$key}：{$vo} </span>              
+            </div>
+         {/volist}
+	</div>
+ </div>
+<div class="panel panel-primary">
+	<div class="panel-heading">开发团队</div>
+	<div class="panel-body">
+		 
+	</div>
+ </div>
+{/block}
